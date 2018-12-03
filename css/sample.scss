@@ -263,13 +263,17 @@ header {
         li {
             list-style: none;
             @include fontsize(15);
+            list-style: non;
+            padding-bottom: 5px;
 
             span {
+
                 color: $blue1;
                 font-weight: bold;
                 display: block;
                 margin-bottom: 3px;
             }
+
         } // li
     } // .news_lists
     @media (min-width: 551px) {
@@ -286,8 +290,9 @@ header {
                 margin-bottom: 20px;
 
                 span {
-                    display: inline;
+                    display: inline-block;
                     margin-bottom: 0px;
+                    padding-right: 10px;
                 }
             } // li
         } // .news_lists
@@ -478,6 +483,10 @@ h1 {
             font-size: 1.5rem;
             font-weight: bold;
             padding-bottom: 15px;
+
+            &.company_title {
+                margin-bottom: 0;
+            }
         }
 
         .news_li {
@@ -506,13 +515,21 @@ h1 {
             font-size: 1.4rem;
         }
 
+
         @media (min-width: 550px) {
             padding-right: 20px;
 
+
             h2 {
                 font-size: 2rem;
-                padding-bottom: 20px;
+
+                .company_title {
+
+                    margin-bottom: 0;
+                }
             }
+
+
 
             .news_li {
                 font-size: 1.5rem;
@@ -523,6 +540,8 @@ h1 {
                     padding-bottom: 5px;
 
                     span {
+                        color: $blue1;
+                        font-weight: bold;
                         display: inline-block;
                         margin-bottom: 0;
                         padding-right: 10px;
@@ -539,7 +558,7 @@ h1 {
         .pc_sidemenu {
 
             h3 {
-                background-color: $gray_blue;
+                background-color: #f3f9fb;
                 color: $blue1;
                 font-size: 1.4rem;
                 font-weight: bold;
